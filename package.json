@@ -1,0 +1,22 @@
+{
+  "name": "dci-mcp-server",
+  "version": "1.0.0",
+  "description": "A MCP server for Developer Connect Insights to get git diffs for GKE deployments.",
+  "main": "mcp_server.js",
+  "scripts": {
+    "start": "node mcp_server.js"
+  },
+  "keywords": [
+    "dci",
+    "mcp",
+    "gke",
+    "github"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/logging": "^10.5.0",
+    "axios": "^1.6.8",
+    "yargs": "^17.7.2"
+  }
+}
