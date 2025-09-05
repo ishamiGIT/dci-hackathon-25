@@ -1,0 +1,16 @@
+#!/bin/bash
+# Gemini CLI Extension: show-diff
+#
+# This script fetches the git diff for the latest deployment of an application
+# by querying Google Cloud Developer Connect Insights (DCI) logs.
+#
+# Arguments:
+#   $1: application_name (string, required) - The AppHub application ID.
+#   $2: project_id (string, required) - The Google Cloud Project ID.
+
+set -e
+set -o pipefail
+
+# --- Begin Script ---
+
+echo "Not yet implemented."
