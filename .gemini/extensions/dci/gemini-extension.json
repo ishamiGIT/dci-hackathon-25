@@ -1,5 +1,14 @@
 {
   "name": "dci",
   "version": "0.0.1",
-  "description": "Custom commands for DCI project infrastructure"
+  "description": "Custom commands for DCI project infrastructure",
+  "mcpServers": {
+    "devops": {
+      "command": "node",
+      "args": [
+        "/usr/local/google/home/ishamirulinda/dci-hackathon-25/dist/index.js"
+      ],
+      "timeout": 150000
+    }
+  }
 }

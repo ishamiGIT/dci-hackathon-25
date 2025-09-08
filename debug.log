@@ -1,0 +1,25 @@
+[2025-09-08T19:22:54.931Z] --- Server Process Started ---
+[2025-09-08T19:22:54.933Z] MCP Server created.
+[2025-09-08T19:22:54.934Z] Tool 'get-diff' registered.
+[2025-09-08T19:22:54.934Z] Attempting to start server...
+[2025-09-08T19:22:54.935Z] Connecting server to transport...
+[2025-09-08T19:22:54.936Z] startServer() called successfully.
+[2025-09-08T19:22:54.937Z] Server connection established. Waiting for messages.
+[2025-09-08T19:23:04.404Z] Tool 'get-diff' started with project: ishamirulinda-sdlc, deployment: rec-app-deployment
+[2025-09-08T19:23:04.404Z] GITHUB_TOKEN is set.
+[2025-09-08T19:23:04.405Z] Fetching logs for project 'ishamirulinda-sdlc' and deployment 'rec-app-deployment'
+[2025-09-08T19:23:06.085Z] Found recent deployment logs.
+[2025-09-08T19:23:06.085Z] Found gitDiffUri: https://github.com/sdlc-graph/sdlc-test-project/compare/9e0f99dd6a595df3231ff01565010855a4f3072c..64abb9d3f18c3d7c597d8f7a24d2ad5f24526314
+[2025-09-08T19:23:06.086Z] Parsed URI. Repo: sdlc-graph/sdlc-test-project, Base: 9e0f99dd6a595df3231ff01565010855a4f3072c, Head: 64abb9d3f18c3d7c597d8f7a24d2ad5f24526314
+[2025-09-08T19:23:06.086Z] Fetching git diff for sdlc-graph/sdlc-test-project from 9e0f99dd6a595df3231ff01565010855a4f3072c to 64abb9d3f18c3d7c597d8f7a24d2ad5f24526314
+[2025-09-08T19:23:06.464Z] Successfully fetched git diff from GitHub.
+[2025-09-08T19:23:06.464Z] Diff successfully retrieved. Returning content.
+[2025-09-08T19:23:48.932Z] Tool 'get-diff' started with project: ishamirulinda-sdlc, deployment: rec-app-deployment
+[2025-09-08T19:23:48.932Z] GITHUB_TOKEN is set.
+[2025-09-08T19:23:48.932Z] Fetching logs for project 'ishamirulinda-sdlc' and deployment 'rec-app-deployment'
+[2025-09-08T19:23:50.077Z] Found recent deployment logs.
+[2025-09-08T19:23:50.077Z] Found gitDiffUri: https://github.com/sdlc-graph/sdlc-test-project/compare/9e0f99dd6a595df3231ff01565010855a4f3072c..64abb9d3f18c3d7c597d8f7a24d2ad5f24526314
+[2025-09-08T19:23:50.078Z] Parsed URI. Repo: sdlc-graph/sdlc-test-project, Base: 9e0f99dd6a595df3231ff01565010855a4f3072c, Head: 64abb9d3f18c3d7c597d8f7a24d2ad5f24526314
+[2025-09-08T19:23:50.078Z] Fetching git diff for sdlc-graph/sdlc-test-project from 9e0f99dd6a595df3231ff01565010855a4f3072c to 64abb9d3f18c3d7c597d8f7a24d2ad5f24526314
+[2025-09-08T19:23:50.351Z] Successfully fetched git diff from GitHub.
+[2025-09-08T19:23:50.352Z] Diff successfully retrieved. Returning content.

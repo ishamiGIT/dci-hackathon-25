@@ -2,21 +2,23 @@
 name = "get-diff"
 
 # A short description of what the command does.
-description = "View the image changes for a recently deployed GKE Deployment."
+description = "Fetches the git diff from the latest deployment for a given GCP project and deployment name."
 
 # This is the crucial part for natural language. 
-# I will match user prompts against this description.
-prompt = "View the changes for an image recently deployed to a GKE Deployment, identifying the project and deployment name."
+# Gemini will match user prompts against this description.
+prompt = "Get the git diff for the latest deployment, specifying the GCP project and deployment name."
 
-# This defines the command to be executed.
-# The {{...}} are placeholders for the parameters defined below.
-exec = "node mcp_server.js --project {{project}} --deployment {{deployment}}"
+# This section defines the tool to be called on the MCP server.
+[tool]
+# This must match the server name in gemini-extension.json and the tool name in the server code.
+call = "dci/devops#get-diff"
 
-# This section defines the parameters I need to extract from the user's prompt.
+# This section defines the parameters for the tool.
+# The names 'project' and 'deployment' MUST match the inputSchema in the server code.
 [param.project]
-prompt = "The GCP project ID" # A hint for me to understand what this parameter is.
+prompt = "The GCP project ID"
 type = "string"
 
 [param.deployment]
-prompt = "The name of the GKE deployment" # Another hint for me.
+prompt = "The name of the GKE deployment"
 type = "string"
