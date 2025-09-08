@@ -95,6 +95,12 @@ async function getGitDiffUriFromLogs(projectId, deploymentName) {
 
 
 async function main() {
+    if (!GITHUB_TOKEN) {
+        console.error('Error: GITHUB_TOKEN environment variable not set.');
+        console.error('Please set it by running: export GITHUB_TOKEN="your_personal_access_token"');
+        process.exit(1);
+    }
+
     const argv = yargs
         .option('project', {
             alias: 'p',

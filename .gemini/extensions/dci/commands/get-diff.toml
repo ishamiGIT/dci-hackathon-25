@@ -1,0 +1,22 @@
+# Name of the command. This will be used in the slash command: /dci get-diff
+name = "get-diff"
+
+# A short description of what the command does.
+description = "View the image changes for a recently deployed GKE Deployment."
+
+# This is the crucial part for natural language. 
+# I will match user prompts against this description.
+prompt = "View the changes for an image recently deployed to a GKE Deployment, identifying the project and deployment name."
+
+# This defines the command to be executed.
+# The {{...}} are placeholders for the parameters defined below.
+exec = "node mcp_server.js --project {{project}} --deployment {{deployment}}"
+
+# This section defines the parameters I need to extract from the user's prompt.
+[param.project]
+prompt = "The GCP project ID" # A hint for me to understand what this parameter is.
+type = "string"
+
+[param.deployment]
+prompt = "The name of the GKE deployment" # Another hint for me.
+type = "string"
